@@ -1,0 +1,168 @@
+/* main */
+.main {
+    
+    max-width: 1800px;
+    margin: 24px auto;
+}
+
+/* 요일 */
+.weekend {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 80px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.weekend h2 {
+    margin: 0 65px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.weekend-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.weekend-item {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 999px;
+    background: #a0bef7;
+    text-align: center;
+    align-content: center;
+    transition: .3s;
+}
+
+.weekend-list .weekend-item:first-child {
+    background: #254581;
+    color: #fff;
+}
+
+.weekend-item:hover {
+    transform: scale(1.1);
+    background: #254581;
+    color: #fff;
+}
+
+/* 카드 */
+.card-wrap{
+    max-width: 1800px;
+    padding: 30px 0;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    min-width: 900px;
+
+}
+
+.card-item {
+    
+    width: calc((100% - 80px) / 5);
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card-item:hover {
+    background: #254581;
+    transform: translateY(-10px);
+}
+
+.card-item:hover .title {
+    color: #fff;
+}
+
+.image-wrap {
+    position: relative;
+}
+
+.image-wrap img {
+    /* width: 260px; */
+    width: 100%;
+}
+
+.good {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 2555, 0.5);
+    border-radius: 999px;
+}
+
+.good img {
+    width: 20px;
+}
+
+.title {
+    display: inline-block;
+    width: 260px;
+    height: 30px;
+    margin: 20px 0;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .card-wrap {
+        overflow: visible;
+    }
+
+    .card-list {
+        flex-wrap: wrap;
+        gap: 30px;
+        min-width: 100px;
+    }
+
+    .card-item {
+        width: calc((100% - 80px) / 3);
+        height: auto;
+    }
+
+    .image-wrap img {
+        width: 100%;
+    }
+} 
+
+@media (min-width: 0) and (max-width: 480px) {
+    .weekend {
+        margin: 0 auto;
+    }
+
+    .weekend-list {
+        gap: 10px;
+    }
+
+    .card-wrap {
+        overflow: auto;
+    }
+    
+    .card-list {
+        flex-wrap: nowrap;
+        gap: 20px;
+        min-width: 0;
+    }
+
+    .card-item {
+        width: 200px;
+        min-width: 200px;
+        height: auto;
+    }
+
+    .image-wrap img {
+        width: 100%;
+    }
+}

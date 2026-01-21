@@ -1,0 +1,110 @@
+/* 헤더 */
+.header {
+    height: 80px;
+}
+
+.inner {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1280px; */
+    height: 100%;
+    background: #416dc0;
+}
+
+.logo {
+    height: 100%;
+    background: #a0bef7;
+    cursor: pointer;
+}
+
+.logo h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mini-search-button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #254581;
+    border-radius: 999px;
+}
+
+.mini-search-button:hover {
+    background: rgb(236, 245, 113);
+}
+
+.search-bar {
+    display:flex;
+    height: 40px;
+    border-radius: 999px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.search-box {
+    margin-left: 5px;
+    font-size: 20px;
+    width: 400px;
+}
+
+.search-button {
+    background: #254581;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: rgb(236, 245, 113);
+}
+
+.login-button {
+    width: 100px;
+    height: 40px;
+    background: #254581;
+    border-radius: 999px;
+    color: #fff;
+}
+
+.login-button a {
+    display: inline-block;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.login-button:hover {
+    background: rgb(236, 245, 113);
+    color: #000;
+}
+
+
+@media (min-width:481px) and (max-width:768px) {
+    .search-box {
+        width: 200px;
+    }
+
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+    .search-bar{
+        display: none;
+    }
+
+    .mini-search-button {
+        display: inline-block;
+    }
+}
+
+/* 바디 */
+body {
+    background: #e9f5ff;
+}

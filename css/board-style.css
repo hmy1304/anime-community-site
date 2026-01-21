@@ -1,0 +1,348 @@
+/* 메인 */
+.main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* 모달 */
+.write-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 350px;
+    background: #a0bef7;
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+}
+
+.modal-detail {
+    width: 80%;
+    margin: 20px auto;
+    line-height: 40px;
+    color: #fff;
+}
+
+#modal-text {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    background: #E9F5FF;
+    border: 1px solid #254581;
+    resize: none;
+}
+
+.modal-button-wrap {
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.modal-write-button, .modal-close-button {
+    width: 60px;
+    color: #fff;
+    background: #254581;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal-write-button:hover, .modal-close-button:hover {
+    transform: scale(1.05);
+    background: rgb(236, 245, 113);
+}
+
+.modalOpen {
+    display: block;
+}
+
+/* 애니 정보 */
+.anime {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.anime-img {
+    width: 200px;
+}
+
+.anime-img img {
+    width: 100%;
+}
+
+.anime-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+}
+
+.anime-main {
+    display: flex;
+    gap: 20px;
+    width: 750px;
+    height: 200px;
+    color: #fff;
+}
+
+.anime-info {
+    width: 375px;
+    background: #416dc0;
+    padding: 20px;
+}
+
+.anime-info-list {
+    line-height: 32px;
+}
+
+.anime-plot {
+    width: calc(100% / 2);
+    line-height: 24px;
+    padding: 20px;
+    overflow: auto;
+    background: #416dc0;
+}
+
+.anime-act {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}   
+
+.laftel {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    background: #254581;
+    border-radius: 999px;
+    transition: 0.2s;
+}
+
+.laftel a {
+    display: inline-block;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.laftel:hover {
+    transform: scale(1.05);
+    background: rgb(236, 245, 113);
+    color: #000;
+}
+
+.write {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    background: #254581;
+    border-radius: 999px;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.write:hover {
+    transform: scale(1.05);
+    background: rgb(236, 245, 113);
+    color: #000;
+}
+
+.good-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: rgba(255, 255, 2555, 0.5);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.good-wrap-hover-color {
+    background: rgb(255, 209, 209);
+}
+
+.good-wrap:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 댓글 */
+
+
+.cummunity-filter {
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background: #a0bef7;
+}
+
+.mini-filter {
+    width: 40px;
+    height: 40px;
+    display: none;
+    border-radius: 10px;
+    background: #254581;
+    cursor: pointer;
+}
+
+.cummunity-filter-list {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+.cummunity-filter-item span {
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.cummunity-filter-item input:checked ~ span {
+    transform: rotate(180deg);
+}
+
+.cummunity-screen {
+    height: 100vh;
+    padding: 10px;
+    overflow: auto;
+    background: rgb(170, 170, 170);
+}
+
+.cummunity-card {
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 20px;
+    background: rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.detail {
+    margin-bottom: 20px;
+}
+
+.user-good {
+    display: inline;
+    color: rgb(255, 143, 148);
+    cursor: pointer;
+
+}
+
+.user-good span {
+    color: #000;
+}
+
+.page-list {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.page-item {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    background: rgb(228, 228, 228);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+    .anime {
+        gap: 50px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .anime {
+        gap: 50px;
+    }
+
+    .anime-main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .anime-info {
+        width: calc(100% / 2);
+    }
+
+    .anime-act {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+    .anime {
+        gap: 50px;
+    }
+
+    .anime-main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .anime-info {
+        width: calc(100% / 2);
+    }
+    .anime {
+        gap: 50px;
+    }
+
+    .anime-main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .anime-info {
+        width: calc(100% / 2);
+    }
+    .anime-act {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .mini-filter {
+        display: inline-block;
+    }
+
+    .cummunity-filter-list {
+        display: none;
+    }
+
+    .open {
+        display: inline-block;
+        background: #c0d6ff;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+
+    .open1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: auto;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>board3</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/board-style.css">
+
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="inner">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>One</h1>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <button class="mini-search-button">
+                    <img src="../assets/search-button.svg" alt="서치 이미지">
+                </button>
+
+                <div class="search-bar">
+                    <input type="text" class="search-box">
+
+                    <button class="search-button">
+                        <img src="../assets/search-button.svg" alt="서치 이미지">
+                    </button>
+                </div>
+
+                <div class="login">
+                    <button class="login-button"><a href="login.html">로그인</a></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 모달 -->
+    <div class="write-modal">
+        <div class="modal-detail">
+            <p class="madal-uwer-name">user-name</p>
+
+            <textarea name="modal-text" id="modal-text"></textarea>
+
+            <div class="modal-button-wrap">
+                <button class="modal-write-button">작성</button>
+
+                <button class="modal-close-button">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 -->
+    <main class="main">
+        <!-- 애니 정보 -->
+        <div class="anime">
+            <div class="anime-img">
+                <img src="../assets/img3.png" alt="anime">
+            </div>
+
+            <div class="anime-wrap">
+                <div class="anime-main">
+                    <div class="anime-info">
+                        <ul class="anime-info-list">
+                            <li class="anime-info-item">제목:전생했더니 슬라임이었던 건에 대하여2기2부</li>
+                            <li class="anime-info-item">총 화수: 14화</li>
+                            <li class="anime-info-item">시청연령: 15</li>
+                            <li class="anime-info-item">장르: 이세계, 판타지</li>
+                            <li class="anime-info-item">출시: 2021년 3분기</li>
+                        </ul>
+                    </div>
+
+                    <div class="anime-plot">
+                        <p>주인공 리무루와 그를 따르는 다수의 마물들이 세운 나라 '쥬라 템페스트 연방국'은 근린 국가들과의 협정과 교역을 통해 '인간과 마물이 공존하는 나라'라는 이상을 현실로
+                            만들려 하고 있었다.이는 인간이었던 슬라임에서 기인한 리무루의 '인간에 대한 호의'였다......하지만 이 세계에는 명확한 '마물에 대한 적의'가 존재하고 있었다.
+                            그 불합리한 현실을 마주했을 때, 리무루는 선택한다.
+                            '무엇을 잃고 싶지 않은지'를───
+                        </p>
+                    </div>
+                </div>
+
+                <div class="anime-act">
+                    <div class="good-wrap">
+                        <img src="../assets/good.svg" alt="good">
+                        <span>2000</span>
+                    </div>
+
+                    <button class="laftel"><a
+                            href="https://laftel.net/search?keyword=%EC%A0%84%EC%83%9D%ED%96%88%EB%8D%94%EB%8B%88+%EC%8A%AC%EB%9D%BC%EC%9E%84%EC%9D%B4%EC%97%88%EB%8D%98+%EA%B1%B4%EC%97%90+%EB%8C%80%ED%95%98%EC%97%AC+1%EA%B8%B0&modal=40382"
+                            target="_blank">라프텔
+                            바로가기</a></button>
+
+                    <button class="write">
+                        댓글 작성
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 댓글 -->
+        <div class="cummunity">
+            <div class="cummunity-filter">
+                <button class="mini-filter">
+                    <img src="../assets/filter.svg" alt="filter">
+                </button>
+
+                <ul class="cummunity-filter-list">
+                    <li class="cummunity-filter-item">
+                        <input type="checkbox" id="fast" hidden>
+                        <label for="fast">최신순</label>
+                        <span>△</span>
+                    </li>
+                    <li class="cummunity-filter-item">
+                        <input type="checkbox" id="many" hidden>
+                        <label for="many">댓글순</label>
+                        <span>△</span>
+                    </li>
+                    <li class="cummunity-filter-item">
+                        <input type="checkbox" id="many-good" hidden>
+                        <label for="many-good">좋아요순</label>
+                        <span>△</span>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="cummunity-screen">
+                <li class="cummunity-card">
+                    <h2 class="user-name">user1</h2>
+                    <p class="detail">good</p>
+                    <p class="date">20XX-XX-XX XX:XX</p>
+                    <p class="user-good">♡<span>1</span></p>
+                </li>
+            </ul>
+
+            <ul class="page-list">
+                <li class="page-item">1</li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector(".mini-filter").addEventListener("click", () => {
+            document.querySelector(".cummunity-filter-list").classList.toggle("open");
+        })
+
+        document.querySelector(".mini-filter").addEventListener("click", () => {
+            document.querySelector(".cummunity-filter").classList.toggle("open1");
+        })
+
+        document.querySelector(".good-wrap").addEventListener("click", () => {
+            document.querySelector(".good-wrap").classList.toggle("good-wrap-hover-color");
+        })
+
+        document.querySelector(".write").addEventListener("click", () => {
+            document.querySelector(".write-modal").classList.add("modalOpen");
+        })
+
+        document.querySelector(".modal-close-button").addEventListener("click", () => {
+            document.querySelector(".write-modal").classList.remove("modalOpen");
+        })
+    </script>
+</body>
+
+</html>

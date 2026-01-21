@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>board4</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/board-style.css">
+
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="inner">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>One</h1>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <button class="mini-search-button">
+                    <img src="../assets/search-button.svg" alt="서치 이미지">
+                </button>
+
+                <div class="search-bar">
+                    <input type="text" class="search-box">
+
+                    <button class="search-button">
+                        <img src="../assets/search-button.svg" alt="서치 이미지">
+                    </button>
+                </div>
+
+                <div class="login">
+                    <button class="login-button"><a href="login.html">로그인</a></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 모달 -->
+    <div class="write-modal">
+        <div class="modal-detail">
+            <p class="madal-uwer-name">user-name</p>
+
+            <textarea name="modal-text" id="modal-text"></textarea>
+
+            <div class="modal-button-wrap">
+                <button class="modal-write-button">작성</button>
+
+                <button class="modal-close-button">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 -->
+    <main class="main">
+        <!-- 애니 정보 -->
+        <div class="anime">
+            <div class="anime-img">
+                <img src="../assets/img6.png" alt="anime">
+            </div>
+
+            <div class="anime-wrap">
+                <div class="anime-main">
+                    <div class="anime-info">
+                        <ul class="anime-info-list">
+                            <li class="anime-info-item">제목: 주술회전 3기</li>
+                            <li class="anime-info-item">총 화수: 미정</li>
+                            <li class="anime-info-item">시청연령: 15</li>
+                            <li class="anime-info-item">장르: 판타지, 액션</li>
+                            <li class="anime-info-item">출시: 2026년 1분기</li>
+                        </ul>
+                    </div>
+
+                    <div class="anime-plot">
+                        <p>시부야 사변을 거쳐 카모 노리토시가 꾸민 주술을 부여받은 자들의 살육전 '사멸회유'가 전국 10개 콜로니(결계)에서 갑자기 시작된다.
+                            이타도리는 시부야에서 대량 살인을 일으켰다는 자책감과, 후시구로를 노리는 스쿠나에 대한 경계심으로,
+                            고전으로 돌아가지 않고 쵸소우와 둘이서 카모 노리토시가 풀어놓은 대량의 주령 토벌에 전념하고 있었다.
+                            그런 대혼란 속에서 주술총감부는 이타도리 유지의 사형 집행 유예를 철회하고,
+                            사형 집행인으로 특급 주술사 · 옷코츠 유타를 임명한다. 옷코츠는 임무를 수행하기 위해 이타도리 앞을 가로막는다.
+                            '사멸회유'의 플레이어(영자)로서 새롭게 각성한 현대의 주술사, 강생해서 부활한 과거의 주술사.
+                            수많은 생각이 교차하는 가운데, 또다시 주술 전성기였던 세상으로 돌진한다.
+                    </div>
+                </div>
+
+                <div class="anime-act">
+                    <div class="good-wrap">
+                        <img src="../assets/good.svg" alt="good">
+                        <span>1000</span>
+                    </div>
+
+                    <button class="laftel"><a
+                            href="https://laftel.net/search?keyword=%EC%A3%BC%EC%88%A0%ED%9A%8C%EC%A0%84&modal=44282"
+                            target="_blank">라프텔
+                            바로가기</a></button>
+
+                    <button class="write">
+                        댓글 작성
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 댓글 -->
+        <div class="cummunity">
+            <div class="cummunity-filter">
+                <button class="mini-filter">
+                    <img src="../assets/filter.svg" alt="filter">
+                </button>
+
+                <ul class="cummunity-filter-list">
+                    <li class="cummunity-filter-item">
+                        <input type="checkbox" id="fast" hidden>
+                        <label for="fast">최신순</label>
+                        <span>△</span>
+                    </li>
+                    <li class="cummunity-filter-item">
+                        <input type="checkbox" id="many" hidden>
+                        <label for="many">댓글순</label>
+                        <span>△</span>
+                    </li>
+                    <li class="cummunity-filter-item">
+                        <input type="checkbox" id="many-good" hidden>
+                        <label for="many-good">좋아요순</label>
+                        <span>△</span>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="cummunity-screen">
+                <li class="cummunity-card">
+                    <h2 class="user-name">user1</h2>
+                    <p class="detail">good</p>
+                    <p class="date">20XX-XX-XX XX:XX</p>
+                    <p class="user-good">♡<span>1</span></p>
+                </li>
+            </ul>
+
+            <ul class="page-list">
+                <li class="page-item">1</li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector(".mini-filter").addEventListener("click", () => {
+            document.querySelector(".cummunity-filter-list").classList.toggle("open");
+        })
+
+        document.querySelector(".mini-filter").addEventListener("click", () => {
+            document.querySelector(".cummunity-filter").classList.toggle("open1");
+        })
+
+        document.querySelector(".good-wrap").addEventListener("click", () => {
+            document.querySelector(".good-wrap").classList.toggle("good-wrap-hover-color");
+        })
+
+        document.querySelector(".write").addEventListener("click", () => {
+            document.querySelector(".write-modal").classList.add("modalOpen");
+        })
+
+        document.querySelector(".modal-close-button").addEventListener("click", () => {
+            document.querySelector(".write-modal").classList.remove("modalOpen");
+        })
+    </script>
+</body>
+
+</html>
