@@ -1,0 +1,77 @@
+/* 메인 */
+.main {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+    margin: 100px auto;
+    padding: 50px 0;
+    border: 2px solid #254581;
+}
+
+.login-title {
+    font-size: 42px;
+}
+
+.login-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: cneter;
+}
+
+.login-bar {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px 0;
+    border: 1px solid #254581;
+}
+
+.main-login-button {
+    width: 350px;
+    height: 5cqmin;
+    font-size: 20px;
+    color: #fff;
+    background: #254581;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.main-login-button:hover {
+    transform: scale(1.02);
+    background: rgb(236, 245, 113);
+    color: #000;
+}
+
+.account-search {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+    color: #6b6b6b;
+}
+
+.account-search li:not(:last-of-type)::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    margin-left: 5px;
+    background: #919191;
+}
+
+.account-search li a:hover {
+    color: rgb(220, 230, 93);
+    font-weight: 600;
+}
