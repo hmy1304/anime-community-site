@@ -7,7 +7,7 @@
     <title>login</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/board-style.css">
+    <link rel="stylesheet" href="../css/login-style.css">
 
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
@@ -25,7 +25,25 @@
         </div>
     </header>
 
+    <!-- 메인 -->
+    <main class="main">
+        <div class="main-login">
+            <h2 class="login-title">로그인</h2>
+            <div class="login-screen">
+                <form class="login-form">
+                    <input type="text" placeholder="아이디 입력" class="login-bar" required>
+                    <input type="password" placeholder="비밀번호 입력" class="login-bar" required>
+                    <button class="main-login-button">로그인</button>
+                </form>
 
+                <ul class="account-search">
+                    <li><a href="#">아이디 찾기</a></li>
+                    <li><a href="#">비밀번호 찾기</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
