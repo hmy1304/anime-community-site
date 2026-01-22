@@ -155,13 +155,11 @@
 
 @media (min-width: 0) and (max-width: 480px) {
     .weekend {
-        width: 380px;
-        margin: 0 auto;
-        /* padding: 10px 0; */
+        width: 100%;
     }
 
     .weekend-list {
-        gap: 10px;
+        justify-content: space-around;
     }
 
     .card-wrap {
