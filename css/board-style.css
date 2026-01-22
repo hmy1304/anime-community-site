@@ -151,6 +151,7 @@
     border-radius: 999px;
     transition: 0.2s;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .write:hover {
@@ -207,6 +208,10 @@
     gap: 20px;
     color: #fff;
     margin-right: 10px;
+}
+
+.cummunity-filter-item label {
+    cursor: pointer;
 }
 
 .cummunity-filter-item span {
