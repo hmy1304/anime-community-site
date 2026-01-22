@@ -70,11 +70,21 @@
                 <div class="anime-main">
                     <div class="anime-info">
                         <ul class="anime-info-list">
-                            <li class="anime-info-item">제목: 전생했더니 슬라임이었던 건에 대하여 3기</li>
-                            <li class="anime-info-item">총 화수: 26화</li>
-                            <li class="anime-info-item">시청연령: 15</li>
-                            <li class="anime-info-item">장르: 이세계, 판타지</li>
-                            <li class="anime-info-item">출시: 2024년 2분기</li>
+                            <li class="anime-info-item"><span>제목: </span>
+                                <p>전생했더니 슬라임이었던 건에 대하여 3기</p>
+                            </li>
+                            <li class="anime-info-item"><span>총 화수: </span>
+                                <p>26화</p>
+                            </li>
+                            <li class="anime-info-item"><span>시청연령: </span>
+                                <p>15</p>
+                            </li>
+                            <li class="anime-info-item"><span>장르: </span>
+                                <p>이세계, 판타지</p>
+                            </li>
+                            <li class="anime-info-item"><span>출시: </span>
+                                <p>2024년 2분기</p>
+                            </li>
                         </ul>
                     </div>
 
@@ -92,7 +102,7 @@
 
                 <div class="anime-act">
                     <div class="good-wrap">
-                        <img src="../assets/good.svg" alt="good">
+                        <img id="good-icon" data-liked="false" src="../assets/good.svg" alt="good">
                         <span>1800</span>
                     </div>
 
@@ -139,7 +149,10 @@
                     <h2 class="user-name">user1</h2>
                     <p class="detail">good</p>
                     <p class="date">20XX-XX-XX XX:XX</p>
-                    <p class="user-good">♡<span>1</span></p>
+                    <div class="user-good-wrap">
+                        <img src="../assets/good.svg" alt="user-good" id="user-good-icon" data-good="false">
+                        <span class="user-good-count">1</span>
+                    </div>
                 </li>
             </ul>
 
@@ -149,27 +162,7 @@
         </div>
     </main>
 
-    <script>
-        document.querySelector(".mini-filter").addEventListener("click", () => {
-            document.querySelector(".cummunity-filter-list").classList.toggle("open");
-        })
-
-        document.querySelector(".mini-filter").addEventListener("click", () => {
-            document.querySelector(".cummunity-filter").classList.toggle("open1");
-        })
-
-        document.querySelector(".good-wrap").addEventListener("click", () => {
-            document.querySelector(".good-wrap").classList.toggle("good-wrap-hover-color");
-        })
-
-        document.querySelector(".write").addEventListener("click", () => {
-            document.querySelector(".write-modal").classList.add("modalOpen");
-        })
-
-        document.querySelector(".modal-close-button").addEventListener("click", () => {
-            document.querySelector(".write-modal").classList.remove("modalOpen");
-        })
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
